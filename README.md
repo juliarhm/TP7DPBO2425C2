@@ -62,7 +62,7 @@ menyimpan data pemeran yang bermain di dalam sebuah k-drama. di dalam kelas ini 
    => Input dari form divalidasi(contoh field wajib di isi)
    => pesan error ditampilkan langsung di halaman.
 #### Screen Record
-## 📹 Demo CRUD
+## Demo CRUD
 Lihat video demonstrasi di sini:  
 [Coba CRUD (Google Drive)](https://drive.google.com/file/d/1X6YatcoArD-3EMqCGhpRUDjowwVziJl7/view?usp=drive_link)]
 
