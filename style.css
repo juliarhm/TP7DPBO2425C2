@@ -1,0 +1,384 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf7fd;
+    /* Custom Very Light Purple */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #9883D2;
+    /* Palet 1 (Deep Purple) */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #8A72C0;
+    /* Darker version of Palet 1 */
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* Navigation */
+nav {
+    background-color: #B192D6;
+    /* Palet 2 (Medium Purple) */
+    padding: 0;
+    border-bottom: 2px solid #9883D2;
+    /* Palet 1 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-right: 1px solid #9883D2;
+    /* Palet 1 */
+}
+
+nav a:hover {
+    background-color: #9883D2;
+    /* Palet 1 */
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: white;
+}
+
+/* Section Titles */
+h2,
+h3 {
+    color: #B192D6;
+    /* Palet 2 (Medium Purple) */
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-bottom: 3px solid #CCA5DC;
+    /* Palet 3 (Light Purple) */
+    padding-bottom: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #9883D2;
+    /* Palet 1 (Deep Purple) */
+    color: white;
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #8A72C0;
+    /* Darker version of Palet 1 */
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E4A6CB;
+    /* Palet 5 (Lightest Pink) */
+    background-opacity: 0.5;
+    /* Make it softer */
+}
+
+tbody tr:hover {
+    background-color: #E4AEE2;
+    /* Palet 4 (Pinkish Purple) */
+}
+
+/* Forms */
+form {
+    background-color: #f8f9fa;
+    /* Light grey */
+    padding: 30px;
+    margin: 30px 0;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #CCA5DC;
+    /* Palet 3 (Light Purple) */
+    box-shadow: 0 0 0 3px rgba(152, 131, 210, 0.2);
+    /* RGB from Palet 1 */
+}
+
+label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Buttons (Generic) */
+button,
+.btn {
+    background-color: #9883D2;
+    /* Palet 1 (Deep Purple) */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+.btn:hover {
+    background-color: #8A72C0;
+    /* Darker version of Palet 1 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* === STYLING TOMBOL ANDA (INI PENTING) === */
+
+/* Specific Action Buttons */
+.btn-primary {
+    /* General button like 'Simpan' in forms */
+    background-color: #9883D2;
+}
+
+.btn-primary:hover {
+    background-color: #8A72C0;
+}
+
+.btn-add,
+.btn-success {
+    /* For 'ADD' links/buttons (GREEN) */
+    background-color: #4CAF50;
+}
+
+.btn-add:hover,
+.btn-success:hover {
+    background-color: #43A047;
+}
+
+.btn-update,
+.btn-warning {
+    /* For 'UPDATE' links/buttons (YELLOW) */
+    background-color: #FFC107;
+    color: #333;
+}
+
+.btn-update:hover,
+.btn-warning:hover {
+    background-color: #FFB300;
+}
+
+.btn-delete,
+.btn-danger {
+    /* For 'DELETE' links/buttons (RED) */
+    background-color: #F44336;
+}
+
+.btn-delete:hover,
+.btn-danger:hover {
+    background-color: #E53935;
+}
+
+
+/* ... Sisa CSS (Cards, Alerts, Footer, dll.) ... */
+/* ... Saya akan persingkat sisanya karena tidak berubah ... */
+
+/* Footer */
+footer {
+    background-color: #B192D6;
+    /* Palet 2 (Medium Purple) */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 4px solid #9883D2;
+    /* Palet 1 */
+    margin-top: 0;
+}
+
+/* Action Buttons Container (for pages like index) */
+.action-buttons {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    /* Light grey */
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* === STYLING TOMBOL ANDA (INI PENTING) === */
+/* Table Actions - Applied to the td containing action links */
+.table-actions {
+    white-space: nowrap;
+}
+
+/* Specific styling for action links within tables */
+.table-actions a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    /* Padding tombol */
+    border-radius: 4px;
+    /* Sudut tombol */
+    font-size: 14px;
+    font-weight: 500;
+    margin: 3px;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* Teks putih untuk tombol berwarna */
+}
+
+.table-actions a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual colors for table action links */
+.table-actions .add-link {
+    /* (GREEN) */
+    background-color: #4CAF50;
+}
+
+.table-actions .add-link:hover {
+    background-color: #43A047;
+}
+
+.table-actions .update-link {
+    /* (YELLOW) */
+    background-color: #FFC107;
+    color: #333;
+    /* Teks hitam untuk tombol kuning */
+}
+
+.table-actions .update-link:hover {
+    background-color: #FFB300;
+}
+
+.table-actions .delete-link {
+    /* (RED) */
+    background-color: #F44336;
+}
+
+.table-actions .delete-link:hover {
+    background-color: #E53935;
+}
+
+/* ... sisa kode @media dan utility ... */
+
+@media (max-width: 768px) {
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-right: none;
+        border-bottom: 1px solid #9883D2;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+}
